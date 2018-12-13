@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS网页换肤</title>
+    <link rel="stylesheet" id="link1" href="#">
+    <script>
+        window.onload = function(){
+            oButton1 = document.getElementById("skin1");
+            oButton2 = document.getElementById("skin2");
+            oLink = document.getElementById("link1");
+            // 更改css指向的文件链接达到换肤效果
+            oButton1.onclick = function(){
+                oLink.href = "css/skin.css";
+            }
+            oButton2.onclick = function(){
+                oLink.href = "css/skin2.css";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>网页换肤</h1>
+    <input type="button" id="skin1" value="皮肤一">
+    <input type="button" id="skin2" value="皮肤二">
+</body>
+</html>

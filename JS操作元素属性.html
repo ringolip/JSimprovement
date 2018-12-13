@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var oDiv1 = document.getElementById("div1");
+            // innerHTML读取标签包裹的内容
+            alert(oDiv1.innerHTML);
+            oDiv1.innerHTML = "改变元素"
+
+            var sHref1 = document.getElementById("href1");
+            sHref1.href = "https://www.google.com";
+            sHref1.className = "hrefclass";
+        }
+    </script>
+</head>
+<body>
+    <div id="div1">操作元素</div>
+    <a href="#" id="href1">链接</a>
+</body>
+</html>

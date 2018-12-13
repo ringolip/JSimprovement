@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS事件属性</title>
+    <script>
+        window.onload = function(){
+            var oButton1 = document.getElementById("button1");
+            // 匿名函数设置事件属性
+            oButton1.onclick = function(){
+                oDIv1 = document.getElementById("div1");
+                oDIv1.style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="div1">一个简单的Div</div>
+    <input type="button" id="button1" value="事件属性">
+</body>
+</html>

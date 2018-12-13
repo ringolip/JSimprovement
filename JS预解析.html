@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        fnMyalert();
+        alert(iNum);
+
+        // 在编译阶段会将定义的函数提前解析
+        function fnMyalert(){
+            alert("hello ringo!");
+        }
+
+        // 在编译阶段会将变量提前解析，并赋值undifined
+        var iNum = 666;
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
