@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .list{
+            width: 300px;
+            margin: 50px;
+            list-style: none;
+            padding: 0px;
+        }
+        .list li{
+            line-height: 50px;
+            border-bottom: 1px dotted black;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            var oUl = document.getElementById("movielist");
+            var aList = ["我想吃掉妳的胰臟", "海王","印度合伙人","绿毛怪格林奇","龙猫","照相师"];
+            var oButton = document.getElementById("button1");
+            var sStr = "";
+            
+            // 点击查询按键
+            oButton.onclick = function(){
+                for(var i=0;i<aList.length;i++){
+                    sStr += "<li>" + aList[i] + "</li>";
+                }
+
+                oUl.innerHTML = sStr;
+            }
+            
+        }     
+    </script>
+</head>
+<body>
+    <ul class="list" id="movielist">
+        <li>电影排行</li>
+        <li>电影排行</li>
+        <li>电影排行</li>
+        <li>电影排行</li>
+        <li>电影排行</li>
+        <li>电影排行</li>
+    </ul>
+    <input type="button" id="button1" value="查询排行">
+</body>
+</html>

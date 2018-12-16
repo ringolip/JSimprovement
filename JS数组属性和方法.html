@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组</title>
+    <script>
+        var aList = new Array(1,2,3,"array");
+        alert(aList.length);
+
+        // join()通过分隔符将数组成员合并成字符串
+        alert(aList.join(""));
+        
+        aList.push(2);
+        alert(aList);
+        alert(aList.reverse());
+        alert("第一次出现" + aList.indexOf(2));
+        aList.splice(2,2,"a","b","v");
+        alert(aList);
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
